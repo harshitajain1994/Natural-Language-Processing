@@ -1,0 +1,40 @@
+from nltk.tokenize.treebank import TreebankWordTokenizer
+t = TreebankWordTokenizer()
+
+class Tree(object):
+    def __init__(self):
+        self.left = None
+        self.right = None
+        self.data = None
+
+line = (TOP (SQ (VBZ Does) (SQ* (NP (DT this) (NN flight)) (VP (VB serve) (NP_NN dinner)))) (PUNC ?))
+words = t.tokenize(line)
+stack = []
+for word in words :
+	if word is ')' :
+		#pop
+		popped_words = []
+		popped = ''
+		count = 0
+		while(popped != '('):
+			popped = stack.pop()
+			popped_words[count] = popped
+			count += 1
+
+		root = Tree()
+		root.left = Tree()
+		root.right = Tree()
+		
+		if(count == 3):
+			root.left.data = popped_words[0]
+			root.data = popped_words[1]
+
+		else :
+			root.right.data = popped_words[0]
+			root.left.data = popped_words[1]
+			root.data = popped_words[2]
+
+		stack.append(root)
+
+	else :
+		stack.append(word)

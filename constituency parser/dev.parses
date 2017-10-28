@@ -1,0 +1,58 @@
+(TOP (S (NP (DT The)(NN flight))(VP (MD should)(VP (VB be)(NP (NP* (CD eleven)(RB a.m))(NN tomorrow)))))(PUNC .))
+
+
+
+
+
+(TOP (FRAG (NP (VBP Where)(PP (IN does)(NP (DT this)(NN flight))))(NN stop))(PUNC ?))
+
+(TOP (FRAG (X (VBZ Does)(NP (DT the)(JJ other)))(NP (NNP American)(NN flight)))(PUNC ?))
+
+
+
+(TOP (FRAG (WHNP (WDT Which)(NNS ones))(S (VBP leave)(PP (IN in)(NP (DT the)(NN morning)))))(PUNC ?))
+
+
+
+
+(TOP (SBARQ (WHNP (WDT What)(NN airline))(SQ (NP* (NP (QP (QP* (RB provides)(JJR only))(CD connecting))(NNS flights))(PP (IN between)(NP (NP* (NNP Denver)(CC and))(NNP San))))(NNP Francisco)))(PUNC ?))
+
+
+
+
+
+
+
+
+
+
+(TOP (SBARQ (WHNP (JJ Display)(NNS flights))(SQ (VP* (VBG arriving)(NP (QP (RB within)(CD thirty))(NNS minutes)))(PP (IN of)(NP (JJS each)(JJ other)))))(PUNC .))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(TOP (FRAG (NP (NP* (NP* (JJ Restriction)(NN code))(SYM A))(SYM P))(PP (IN slash)(NP (CD five)(CD seven))))(PUNC .))
+
+(TOP (FRAG (VBG Departing)(PP (IN before)(NP (CD ten)(RB a.m))))(PUNC .))
+(TOP (FRAG (JJS Cheapest)(NN fare))(PUNC .))
+(TOP (FRAG (VBG Departing)(PP (IN after)(NP (CD six)(RB p.m))))(PUNC .))
+
+
+
+(TOP (FRAG (NP* (NP* (NN Airline)(NNP T))(NNP W))(SYM A))(PUNC .))
+
+
+
+
+

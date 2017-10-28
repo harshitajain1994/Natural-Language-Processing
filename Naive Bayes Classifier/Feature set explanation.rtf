@@ -1,0 +1,33 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf760
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red53\green53\blue53;}
+{\*\expandedcolortbl;;\cssrgb\c27059\c27059\c27059;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs24 \cf2 Feature Set :\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 As seen from the given data sets, the average character length of the lines in Shakespeare data is more than the average character length of lines in Bronte\'92s work. Thus, this feature can be used to train the classifier. A tremendous increase in the overall accuracy was seen after including this feature. \
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 Another observation made from the given data sets was in the use of punctuations. Frequency of some punctuation marks like colon, apostrophe etc.  is more in Shakespeare\'92s work while it is greater in Bronte\'92s work for other punctuations like exclamation mark. Thus, this observation can also be used as one of the features in the feature set.\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 To differentiate between the work of two poets, NGrams is another feature. In this feature set, only unigrams and bigrams have been used to find the occurrence of most common words and phrases. This feature will help to identify the words more frequently used by Shakespeare as compared with Bronte and vice-versa. Every poet has a different writing style and a poet might use words which are unique to his vocabulary. It is known that there are thousands of words in English which were coined by Shakespeare. Therefore, the difference in frequency of occurrence of words can help us in classifying the data into appropriate poet\'92s category. \
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 Also, before calculating the frequency of words(unigrams) in each data set, stemming is performed to make sure that words with same stem but different suffixes(write, writes, written, writing) are considered the same. This is called Lemmatization and it helps in improving the overall accuracy of the classifier. Similarly, Bigrams have also been introduced to find out the commonly occurring phrases in both the data sets. Trigrams can also be used in the feature set but their addition did not result in any improvement as Trigrams are usually more useful where the text length is high. \
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 Also, before calculating the frequency distribution of Ngrams, common occurring words like she, why, the, when, is, a etc. have been removed(Stop words removal). If these words are not removed, then this might result into tampering of results. Such common words are not specific to any of the poets, rather these words are common building blocks of sentences in English language. These words, if not removed, might overshadow the distinguishing words of the text. Thus, taking the frequency of stop words into consideration will result in inaccurate results. \
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 Additionally, another observation made from the data sets is that the frequency of Nouns in Shakespeare\'92s work is more than that in Bronte\'92s work. And similarly, frequency of pronouns in Bronte\'92s work is more than that of Shakespeare\'92s. Thus, this feature too has been taken as a part of the feature set.  }
